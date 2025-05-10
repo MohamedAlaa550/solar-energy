@@ -1,0 +1,1124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: calc(100% - 300px);
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+font-size: 2.625rem;
+font-weight: 600;
+line-height: 100%;
+letter-spacing: -2%;
+}
+
+.heading  p {
+    margin-block: 30px;
+    color: #475467;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.call-btn {
+    padding: 12px 34px;
+    background-color: #FFBB1C;
+    border-radius: 109px;
+    -webkit-border-radius: 109px;
+    -moz-border-radius: 109px;
+    -ms-border-radius: 109px;
+    -o-border-radius: 109px;
+    border: none;
+}
+
+
+/* start Navbar */
+
+nav {
+    padding: 1rem 0;
+    background-color: #0B9586;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+nav .links ul {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+
+}
+
+nav .links ul .active {
+    background-color: rgba(0, 0, 0, 0.068);
+    font-weight: 600;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    position: relative;
+}
+
+nav .links ul .active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #0c6459;
+    bottom: 0;
+    left: 0;
+}
+
+
+nav .links a {
+
+    padding: .5rem 1.75rem;
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    letter-spacing: 0.94px;
+}
+
+nav .contact {
+    text-align: end;
+    letter-spacing: 0.94px;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+
+
+}
+
+nav .contact :last-child {
+    font-size: 1.5rem;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+/* end Navbar */
+
+
+/* starrt landing  */
+
+
+.landing {
+    min-height: 100dvh;
+    background-image: url(../images/solar-panels-meadow\ 1.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.landing .container {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.landing .avg {
+    /* background-color: red; */
+    padding: 12px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 335px;
+    margin-top: 3.125rem;
+}
+
+.landing .avg span {
+    color: #FFFFFF;
+}
+
+
+
+.landing .avg::before {
+    content: "";
+    width: 220px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.329);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+
+.landing .avg::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+.landing .info {
+    width: 65%;
+    margin-top: 70px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.landing .info h1 {
+    font-size: 3.25rem;
+    margin-block: 20px;
+    font-weight: 500;
+}
+
+.landing .info p {
+    font-size: 1.25rem;
+    line-height: 30px;
+}
+
+.landing .call {
+    margin-top: 1.875rem;
+}
+
+.landing .call :first-child {
+    padding: 12px 34px;
+    background-color: #3CAB90;
+    color: #FFFFFF;
+    border-radius: 109px;
+    -webkit-border-radius: 109px;
+    -moz-border-radius: 109px;
+    -ms-border-radius: 109px;
+    -o-border-radius: 109px;
+    border: none;
+    margin-right: 24px;
+}
+
+
+/* end landing  */
+
+
+/* start about */
+
+.about .container {
+    padding-block: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 50px;
+
+}
+
+.about .container .content {
+    width: calc(60% - 25px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about .container .content h2 {
+    font-size: 2.625rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -2%;
+    width: 90%;
+}
+
+.about .container .content p {
+    color: #475467;
+    line-height: 24px;
+}
+
+.about .container .content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.25rem;
+}
+
+.about .container .content ul li {
+    font-weight: 600;
+}
+
+.about .container .content ul span {
+    font-weight: 700;
+    color: #84BD3A;
+    margin-right: 8px;
+}
+
+
+
+.about .container .image {
+    width: calc(40% - 25px);
+    position: relative;
+}
+
+.about .container .image .solar-panel {
+    width: 266px;
+    background-color: #FFBB1C;
+    position: absolute;
+    bottom: 20px;
+    left: -30px;
+    padding: 1.5rem 1.875rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.about .container .image .solar-panel p {
+    color: #2A3334;
+    margin-top: 1.25rem;
+}
+
+
+
+
+
+/* end about  */
+
+/* start call-us  */
+
+.call-us {
+    background-image: url(../images/8116\ 1.png);
+    background-size: cover;
+    background-position: center center;
+    height: 505px; 
+}
+
+.call-us .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    height: 100%;
+}
+
+.call-us .call-btn {
+    align-self: flex-start;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 8%;
+    color: #2A3334;
+}
+
+.call-us h2 {
+    font-size: 2.625rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #FFFFFF;
+}
+
+.call-us p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 140%;
+    width: 60%;
+}
+
+/* end call-us  */
+
+/* start kits  */
+
+.kits .container {
+padding: 3.75rem 0;
+}
+
+.kits .heading {
+    text-align: center;
+}
+
+.kits .heading h2 {
+font-size: 2.625rem;
+font-weight: 600;
+line-height: 100%;
+letter-spacing: -2%;
+}
+
+.kits .heading  p {
+    margin-block: 30px;
+    color: #475467;
+}
+
+.kits .row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.kits .card .card-body {
+    padding: 15px;
+    box-shadow:0px 0px 1px 0px #00000063;
+}
+
+.kits .card h3 {
+margin-block: 20px;
+font-size: 1.25rem;
+font-weight: 600;
+}
+
+.kits .card p {
+    margin-block: 20px;
+    line-height: 1.5rem;
+    color: #475467;
+}
+
+.kits .card span {
+    color: #3CAB90;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.kits .card span:hover {
+    color: purple;
+    transition: color 1s;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+}
+
+.kits .card span img {
+    margin-left: 10px;
+}
+
+
+
+
+/* end kits  */
+
+
+/* start replacement  */
+
+.replacement {
+    height: 505px;
+    background-image: url(../images/8116\ 1\ \(1\).png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.replacement .content {
+    background-color: #00000091;
+    width: 858px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2.75rem;
+    border-radius: .75rem;
+    -webkit-border-radius: .75rem;
+    -moz-border-radius: .75rem;
+    -ms-border-radius: .75rem;
+    -o-border-radius: .75rem;
+}
+
+.replacement .content h2 {
+    margin-bottom: 32px;
+    font-size: 2.625rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+
+.replacement .content p {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+
+
+/* end replacement  */
+
+/* start energy  */
+
+.energy {
+    background-color: #FFBB1C0D;
+    padding-block: 60px;
+
+}
+
+.energy .container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.energy .one-card .Power-btn {
+    background-color: #0B9586;
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.energy .one-card {
+    width: 33.33333% ;
+    /* padding: 24px; */
+}
+
+
+
+.energy .one-card h2 {
+    margin-block: 24px;
+    font-size: 2.625rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+
+.energy .one-card p {
+    font-size: 1.125rem;
+    line-height: 28px;
+    color: #475467;
+}
+
+.energy .row {
+    width: 66.66666%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.energy .row .card {
+    width: calc(50% - 15px);
+    background-color: #3CAB900D;
+    padding: 24px;
+    border: 1px solid #3CAB90;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.energy .row .card h3 {
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.energy .row .card p {
+    line-height: 24px;
+    color: #475467;
+}
+
+.energy .row .card span {
+    color: #3CAB90;
+}
+
+.energy .row .card span:hover{
+    color: purple;
+    transition: color 1s;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+}
+
+.energy .row .card span img {
+    margin-left: 8px;
+}
+
+
+
+.energy .row .card .img-card {
+    background-color: #3CAB9026;
+    text-align: center;
+    height: 106px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+/* end energy  */
+
+
+/* start values  */
+
+.values .container {
+padding-block: 5rem;
+
+}
+
+.values .row {
+    display:  flex;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.values .row .card {
+    background-color: #3CAB900D;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    border: 1px solid #3CAB90;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.values .row .card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.values .row .card  p {
+    color: #475467;
+    line-height: 24px;
+}
+
+/* end values  */
+
+
+/* start testemonial */
+
+
+.testemonial .container {
+    padding-block: 3.75rem;
+    display: flex;
+    /* align-items: center; */
+    gap: 30px;
+}
+
+
+.testemonial .info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 40%;
+    justify-content: center;
+}
+
+.testemonial .info h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.testemonial .info p {
+    font-size: 1.125rem;
+}
+
+.testemonial .profile {
+    width: 60%;
+    align-self: start;
+    background-color: #3CAB900F;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+.testemonial .profile .heaader {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.testemonial .profile .heaader .dots span {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-inline: 5px;
+}
+
+.testemonial .profile .heaader .dots .active {
+    background-color: #6B6B6B;
+}
+
+
+.testemonial .profile .heaader p {
+    color: #3CAB90;
+    font-weight: 700;
+}
+
+.testemonial .profile .comment {
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.testemonial .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testemonial .footer .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.testemonial .footer .arrows {
+    display: flex;
+    gap: 10px;
+}
+
+.testemonial .footer .arrows div {
+    width: 48px;
+    height: 48px;
+    border: 1px solid;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testemonial .footer .user-info :first-child {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* end testemonial */
+
+
+/* start footer  */
+
+footer {
+    background-color: #283646;
+}
+
+footer .container {
+    padding-block: 3.75rem;
+}
+
+footer .info {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: end;
+
+}
+
+footer .links .image {
+    margin-bottom: 40px;
+}
+
+footer .info .sections {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #FFFFFF;
+}
+
+footer .subscribe {
+    width: 400px;
+}
+
+footer .subscribe p {
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+footer .email-input {
+    position: relative;
+ 
+}
+
+footer .email-input #email {
+    border: 1px solid #B3BDC7;
+    padding: 10px;
+    height: 38px;
+    width: 100%;
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 38px;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    -ms-border-radius: 38px;
+    -o-border-radius: 38px;
+}
+
+
+
+footer .email-input button {
+    padding: 12px 34px;
+    background-color: #FFBB1C;
+    color: #FFFFFF;
+    border: 0;
+    position: absolute;
+    right: 0;
+    border-radius: 109px;
+    -webkit-border-radius: 109px;
+    -moz-border-radius: 109px;
+    -ms-border-radius: 109px;
+    -o-border-radius: 109px;
+   
+}
+
+.break {
+    background-color: #71777D;
+    height: 2px;
+    margin-block: 40px;
+    width: 100%;
+}
+
+footer .privacy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #92989F;
+    font-size: 12px;
+line-height: .26px;
+}
+
+footer .privacy .terms ul {
+    display: flex;
+    justify-content: space-between;
+gap: 10px;
+
+}
+
+
+/* end footer  */
+
+
+/* start media  */
+
+@media screen and (max-width:640px){
+
+    html {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    nav {
+        padding: 0;
+    }
+    nav .logo {
+        display: none;
+    }
+
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+
+    nav .links ul {
+        gap : 0
+    }
+
+    nav .links a {
+        padding: 0 8px;
+        font-size: 1.125rem;
+    }
+
+    nav .contact :last-child {
+        font-size: 8px;
+    }
+
+    .landing .call {
+        display: flex;
+    }
+
+    .about .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+
+    .about .container .content {
+        width: 100%;
+    }
+
+    .about .container .content h2 {
+        font-size: 30px;
+    }
+
+    .about .container .image {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about .container .image img {
+        width: 100%;
+    }
+
+    .about .container .image .solar-panel {
+        width: 150px;
+    }
+
+    .about .container .image .solar-panel  img {
+        width: 70px;
+    }
+
+  
+
+    .call-us h2 {
+        font-size:30px ;
+    }
+
+    .kits .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .kits .row {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .kits .row .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .kits .row .card .card-img {
+width: 100%;
+    }
+
+    .energy .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .energy .one-card {
+        width: 100%;
+    }
+
+    .energy .row {
+        width: 100%;
+    }
+
+    .energy .row .card {
+        width: 100%;
+    }
+
+    .values .row {
+        flex-direction: column;
+    }
+
+    .values .row .card {
+        text-align: center;
+    }
+
+    .testemonial .container  {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testemonial .profile  {
+        width: 100%;
+    }
+
+    footer .info {
+        align-items: start;
+    }
+
+    footer .info .links {
+        width: 40%;
+    }
+
+    footer .info .links .image img {
+        width: 70%;
+    }
+
+    footer .info .sections {
+        gap: 8px;
+        font-size: 8px;
+    }
+
+    footer .subscribe {
+        width: 250px;
+    }
+
+    footer .email-input #email {
+        width: 100%;
+        height: 20px;
+    }
+
+    footer .email-input button{
+        padding: 4px 8px;
+
+    }
+}
+
+
+@media screen and (min-width:640px) and (max-width: 900px){
+
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav .logo {
+        /* display: none; */
+    }
+
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+
+    nav .links ul {
+        gap : 0
+    }
+
+    nav .links a {
+        padding: 0 8px;
+        font-size: 1.125rem;
+    }
+
+    nav .contact :last-child {
+        font-size: 8px;
+    }
+
+    .about .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+
+    .about .container .content {
+        width: 100%;
+    }
+
+    .about .container .content h2 {
+        font-size: 30px;
+    }
+
+    .about .container .image {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about .container .image img {
+        width: 100%;
+    }
+
+    .about .container .image .solar-panel {
+        width: 150px;
+    }
+
+    .about .container .image .solar-panel  img {
+        width: 70px;
+    }
+
+    .kits .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .kits .row {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .kits .row .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .kits .row .card .card-img {
+width: 100%;
+    }
+
+    .values .row {
+        flex-direction: column;
+    }
+
+    .values .row .card {
+        text-align: center;
+    }
+
+    footer .info {
+        align-items: start;
+    }
+
+
+}
